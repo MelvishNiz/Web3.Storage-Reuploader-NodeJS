@@ -20,5 +20,5 @@ Install Module
 Example
 
 ```
- npm download http://speedtest.ftp.otenet.gr/files/test1Mb.db
+ npm start http://speedtest.ftp.otenet.gr/files/test1Mb.db
 ```
