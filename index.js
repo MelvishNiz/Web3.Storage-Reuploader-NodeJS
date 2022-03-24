@@ -6,17 +6,15 @@ import Downloader from 'nodejs-file-downloader'
 import { Web3Storage, getFilesFromPath } from 'web3.storage'
 
 (async() => {
-    //Wrapping the code with an async function, just for the sake of example.
     let fileName = "";
     const url = process.argv.slice(2)[0];
     console.log('downloading: ', url);
     const downloader = new Downloader({
-        url: url, //If the file name already exists, a new file with the name 200MB1.zip is created.
-        directory: "./downloads", //This folder will be created, if it doesn't exist.
+        url: url,
+        directory: "./downloads",
         maxAttempts: 3,
         cloneFiles: false,
         onProgress: function(percentage) {
-            //Gets called with each chunk.
             console.log("Downloading : ", percentage + "%");
         },
         shouldStop: function(error) {
