@@ -49,7 +49,7 @@ import { Web3Storage, getFilesFromPath } from 'web3.storage'
                 if (pct.toFixed(0) == 100) {
                     if (fs.existsSync(fileLocation)) {
                         fs.rm(fileLocation, { recursive: true }, () => {
-                            console.log("Upload Complete https://" + ccid + "/ipfs.dweb.link");
+                            console.log("Upload Complete https://" + ccid + ".ipfs.dweb.link");
                             process.exit();
                         });
                     }
