@@ -1,0 +1,19 @@
+{
+    "name": "ipfs-d",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "download": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "fs": "^0.0.1-security",
+        "nodejs-file-downloader": "^4.9.3",
+        "path": "^0.12.7",
+        "web3.storage": "^3.5.7"
+    }
+}
